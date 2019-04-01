@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Figma</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators" style="bottom: 18%; right: 60%;">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view"
+          style="background-image: url('img/brg0.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-white-strong d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <div class="ellipse"></div>
+              <div class="ellipse2-2"></div>
+              <div class="ellipse-2-1">
+                <div class="book"><i class="fas fa-book-open mdb-gallery-view-icon"></i></div>
+              </div>
+              <h3 class="h3-responsive">Read Books</h3>
+              <p>Create your account to get started. After that, you can share books and make friends.</p>
+              <a class="skip">
+                <p>Skip Intro</p>
+              </a>
+              <div class="ellipse1"></div>
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/First slide-->
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view"
+          style="background-image: url('img/brg0.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-white-strong d-flex justify-content-center align-items-center">
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <div class="ellipse0"></div>
+              <div class="ellipse-2-3"></div>
+              <div class="ellipse-2-1 star">
+                <div class="book"><i class="fas fa-star mdb-gallery-view-icon"></i></div>
+              </div>
+              <h3 class="h3-responsive">Review Them</h3>
+              <p>Create your account to get started. After that, you can share books and make friends.</p>
+              <a class="skip">
+                <p>Skip Intro</p>
+              </a>
+            </div>
+            <!-- Content -->
+          </div>
+          <!-- Mask & flexbox options-->
+        </div>
+      </div>
+      <!--/Second slide-->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next"
+      style="top:50%; right: 10%;">
+      <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-circle-right"
+          style="font-size: 3em; color: greenyellow;"></i></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+  <!--Main layout-->
+  <main>
+    <section style="background: linear-gradient(336.91deg, #F0F4FD -56.86%, #FFFFFF 126.39%);" id="login" class="hide">
+      <div class="container">
+        <div class="ellipse2-2-1"></div>
+        <div class="ellipse-2-1 bulb">
+          <div class="book"><i class="fas fa-lightbulb white-text"></i></div>
+        </div>
+        <!-- Material form login -->
+        <div class="greet">
+          <h3 class="h3-responsive">Welcome!</h3>
+          <p>Create your account to get started. After that, you can share books and make friends.</p>
+        </div>
+        <div class="ellipse2-2-3"></div>
+        <div class="card">
+          <!--Card content-->
+          <div class="card-body px-lg-5 pt-0">
+            <!-- Form -->
+            <form class="text-center" style="color: #757575;">
+              <!-- Email -->
+              <div class="md-form">
+                <input type="email" id="materialLoginFormEmail" class="form-control">
+                <label for="materialLoginFormEmail">E-mail</label>
+              </div>
+              <!-- Password -->
+              <div class="md-form">
+                <input type="password" id="materialLoginFormPassword" class="form-control">
+                <label for="materialLoginFormPassword">Password</label>
+              </div>
+              <!-- Retype Password -->
+              <div class="md-form">
+                <input type="password" id="materialLoginFormPasswordrtp" class="form-control">
+                <label for="materialLoginFormPasswordrtp">Type Password Again</label>
+              </div>
+              <!-- Sign in button -->
+              <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"
+                onclick="validateForm()">Sign
+                Up</button>
+              <div id="status" style="color:red;"></div>
+              <!-- Login -->
+              <p id="login">Already have an account?<a href=""> Login</a></p>
+            </form>
+            <!-- Form -->
+          </div>
+        </div>
+        <!-- Material form login -->
+      </div>
+    </section>
+    <section style="background: linear-gradient(147.21deg, #EEECFF -8.91%, #FFFFFF 99.17%);" id="success" class="hide">
+      <div class="container">
+        <div class="ellipse-2-1 check">
+          <div class="book"><i class="fas fa-check white-text"></i></div>
+        </div>
+          <h3 class="h3-responsive">Thank you!</h3>
+          <p>You have submitted your first book review. Now it’s time to make some friends.</p>
+       
+        <!-- <div class="success">
+          
+        </div> -->
+      </div>
+    </section>
+    <section style="background: linear-gradient(147.21deg, #EEECFF -8.91%, #FFFFFF 99.17%)" id="myBooList" class="hide">
+      <div class="container">
+        <div class="ellipse-3-0"></div>
+        <div class="booklist">>
+          <h3 class="h3-responsive">My Book List</h3>
+        </div>
+        <!-- Search form -->
+        <div class="search">
+          <input class="form-control" type="text" placeholder="Search book" aria-label="Search">
+        </div>
+        <div class="bookR">
+          <h3 class="h3-responsive">BOOKS REVIEWED BY YOU</h3>
+        </div>
+        <div class="rectangle">
+          <img src="img/img00.jpg" alt="">
+          <div class="res">
+            <h3 class="h3-responsive">Remote: Office Not Required</h3>
+            <p>Jason Fried</p>
+            <i class="fas fa-star mdb-gallery-view-icon str1"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str2"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str3"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str4"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str5"></i>
+          </div>
+        </div>
+        <div class="rectangle2">
+          <img src="img/img01.jpg" alt="">
+          <div class="res">
+            <h3 class="h3-responsive">Papillon</h3>
+            <p>Henri Charriere</p>
+            <i class="fas fa-star mdb-gallery-view-icon str1"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str2"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str3"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str4"></i>
+            <i class="fas fa-star mdb-gallery-view-icon str5"></i>
+          </div>
+        </div>
+        <div class="rectangle3">
+          <img src="img/img02.jpg" alt="">
+          <div class="res">
+            <h3 class="h3-responsive">The Dark Tower: <br /> The Gunslinger</h3>
+            <p>stephen King</p>
+          </div>
+          <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit"
+            style="top:76%;">Add Book Review</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
